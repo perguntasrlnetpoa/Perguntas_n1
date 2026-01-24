@@ -1,0 +1,171 @@
+.quiz-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-input {
+  width: 80%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #287bff;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.name-input:focus {
+  box-shadow: 0 0 0 2px rgba(40, 123, 255, 0.3);
+}
+
+
+.corner-image {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 200px;
+  opacity: 0.9;
+}
+
+.quiz-card {
+  width: 420px;
+  padding: 30px;
+  border: 4px solid #287bff;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.question-number {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 2px solid #287bff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.option:hover {
+  background: yellow;
+}
+
+.option input {
+  display: none;
+}
+
+.radio-custom {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #287bff;
+  border-radius: 50%;
+  margin-right: 14px;
+  position: relative;
+}
+
+.option.selected .radio-custom::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #287bff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.option-text {
+  color: #000;
+  font-size: 16px;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #287bff;
+  color: white;
+  cursor: pointer;
+}
+
+.confirm-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background: black;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.App.dark {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+.App.dark .quiz-card {
+  background: #1e1e1e;
+  border-color: white;
+}
+.App.dark h2,
+.App.dark p,
+.App.dark .option-text {
+  color: white;
+}
+.App.dark .option {
+  border-color: white;
+
+}
+
+.App.dark .radio-custom {
+  border-color: white;
+}
+
+.App.dark .option.selected .radio-custom::after {
+  background: white;
+}
+
+.App.dark .option:hover {
+  background: #287bff;
+}
+
+.App.dark .confirm-btn {
+  background: white;
+  color: black;
+}
+
+.App.dark .confirm-btn {
+  background: #287bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.App.dark .confirm-btn:disabled {
+  background: #b0b0b0;
+  color: #666;
+  cursor: not-allowed;
+}
