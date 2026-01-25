@@ -113,7 +113,7 @@ Resultado: ${a.isCorrect ? "✅" : "❌"}
           <div className="quiz-card">
             <h2>Obrigado, {userName}!</h2>
             <p>Suas respostas foram enviadas com sucesso.</p>
-            <p>Você pode fechar o aplicativo.</p>
+            <p>Você pode fechar a página.</p>
           </div>
           <img src={logo} alt="Logo" className="corner-image" />
         </div>
