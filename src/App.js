@@ -11,7 +11,8 @@ function App() {
   const [finished, setFinished] = useState(false);
   const [userName, setUserName] = useState("");
   const [darkMode, setDarkMode] = useState(false);
-  const [blocked, setBlocked] = useState(false);
+  const [blocked] = useState(false);
+
 
 async function sendEmail(data) {
   const total = data.length;
