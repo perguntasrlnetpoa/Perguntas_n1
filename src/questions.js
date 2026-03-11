@@ -13,7 +13,7 @@ const questions = [
 
 {
     question: "Qual os passos para subir uma ONU/ONT?",
-    answers: ["Copiar nome do cliente, entrar em Autorizar ONU, selecionar a ONU pela GPON, clicar em autorizar, alterar NOME/VLAN, Salvar e Autorizar ", "Procurando a ONU em CLIENTES FIBRA", "Deletar e Autorizar novamente a onu", "Usar a Opção do Radius para localizar ONU"],
+    answers: ["Copiar nome do cliente, entrar em Autorizar ONU, selecionar a ONU pela GPON, clicar em autorizar, alterar NOME/VLAN, Salvar e Autorizar", "Procurando a ONU em CLIENTES FIBRA", "Deletar e Autorizar novamente a onu", "Usar a Opção do Radius para localizar ONU"],
     correct: "Copiar nome do cliente, entrar em Autorizar ONU, selecionar a ONU pela GPON, clicar em autorizar, alterar NOME/VLAN, Salvar e Autorizar"
   },
 
