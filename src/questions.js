@@ -10,13 +10,6 @@ const questions = [
     answers: ["Atenuação na Fibra", "Falta de energia elétrica", "ONU/ONT não autorizada", "Roteador não conectado na ONU"],
     correct: "Falta de energia elétrica"
   },
-
-{
-    question: "Qual os passos para subir uma ONU/ONT?",
-    answers: ["Copiar nome do cliente, entrar em Autorizar ONU, selecionar a ONU pela GPON, clicar em autorizar, alterar NOME/VLAN, Salvar e Autorizar", "Procurando a ONU em CLIENTES FIBRA", "Deletar e Autorizar novamente a onu", "Usar a Opção do Radius para localizar ONU"],
-    correct: "Copiar nome do cliente, entrar em Autorizar ONU, selecionar a ONU pela GPON, clicar em autorizar, alterar NOME/VLAN, Salvar e Autorizar"
-  },
-
 {
     question: "Para que serve o menu RADIUS?",
     answers: ["Encontrar o MAC do roteador", "Localizar ONU", "Encontrar IP para acesso", "Localizar o DNS do roteador"],
@@ -29,9 +22,14 @@ const questions = [
     },
 {
     question: "Como saber se a ONU/ONT está pedindo autorização?",
-    answers: ["Luz LOS acende", "PON piscando lentamente", "Luz WAN apagada", "Luz de LAN apagada"],
-    correct: "PON piscando lentamente"
+    answers: ["LED LOS piscando", "LED PON piscando", "LED WAN apagada", "LED de LAN apagada"],
+    correct: "LED PON piscando"
     },
+{
+    question: "Qual os passos para subir uma ONU/ONT?",
+    answers: ["Procurando a ONU em Autorizar ONU", "Procurando a ONU em CLIENTES FIBRA", "Deletar e Autorizar novamente a onu", "Usar a Opção do Radius para localizar ONU"],
+    correct: "Procurando a ONU em Autorizar ONU"
+  },
 {
     question: "Para que serve o programa consulta OLT?",
     answers: ["Verificar ONU ou Roteador que esteja no sistema", "Pesquisar na OLT qual ONU está vinculada", "Verificar roteador resetado", "Verificar potência do roteador"],
