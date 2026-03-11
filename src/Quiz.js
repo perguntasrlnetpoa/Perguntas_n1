@@ -19,7 +19,7 @@ export default function Quiz({ onFinish }) {
 
   useEffect(() => {
     const selectedQuestions = shuffle(questionsData)
-      .slice(0, 30)
+      .slice(0, 10)
       .map(q => ({
         ...q,
         shuffledAnswers: shuffle(q.answers)

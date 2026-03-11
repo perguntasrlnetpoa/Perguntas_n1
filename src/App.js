@@ -18,7 +18,7 @@ async function sendEmail(data) {
   const total = data.length;
   const correct = data.filter(q => q.isCorrect).length;
   const score = Math.round((correct / total) * 100);
-  const status = score >= 70 ? "APROVADO" : "RECUPERAÇÃO";
+  const status = score >= 60 ? "APROVADO" : "RECUPERAÇÃO";
 
   const statusIcon = status === "APROVADO" ? "✅" : "⚠️";
 
